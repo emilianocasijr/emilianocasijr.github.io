@@ -7,6 +7,8 @@ document.body.clientHeight;
 
 
 var swiper = new Swiper(".mySwiper", {
+    observer: true,
+    observeParents: true,
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
