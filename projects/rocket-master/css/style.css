@@ -1,0 +1,37 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-one-bg{
+    background-image: url('../images/hero-section-bg.svg');
+}
+
+.moon-section-bg{
+    background-image: url('../images/moon-section-bg.svg');
+}
+
+.footer-section-bg{
+    background-color: #0F0F0F;
+}
+
+.portfolio-link{
+    color: #878787;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.portfolio-link:hover{
+    color: white;
+}
+
+.icon{
+    font-size: 6.25rem;
+}
+
+.icon-bg{
+    background-color: #EAEBFF;
+}
+
+.feature-border-top{
+    border-top: 3px solid #E8E9F1;
+}
