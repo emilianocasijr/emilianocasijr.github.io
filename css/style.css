@@ -47,13 +47,20 @@ section{
  NAVBAR 
  **********************/
 nav{
-    display: none;
     position: fixed;
     left: 4.5vw;
     font-size: 1.125rem;
     transition: all 1s ease;
 }
-
+@media (max-width:1281px) {
+    nav{
+        position: fixed;
+        font-size: 1rem;
+    }
+    nav ul{
+        display: flex;
+    }
+}
 nav li a{
     text-decoration: none;
     color: #C8C8C8;
@@ -69,12 +76,22 @@ nav li a{
     color: #C8C8C8;
     transition: all 1s ease;
 }
+@media (max-width:1281px) {
+    .nav-link{
+        padding: 0px 5px;
+    }
+}
 
 .current-page{
     font-size: 48px;
     font-weight: 600;
     color: white;
     transition: all 1s ease;
+}
+@media (max-width:641px) {
+    .current-page{
+        font-size: 1rem;
+    }
 }
 
 /**********************
@@ -107,7 +124,7 @@ nav li a{
 }
 
 h1{
-    font-size: 4.375rem;
+    font-size: 4.374rem;
     font-weight: 400;
 }
 @media (max-width:1281px) {
@@ -202,6 +219,11 @@ h1{
         width: 90%;
     }
 }
+@media (max-width:374px) {
+    .greeting-container{
+        margin-top: 2rem;
+    }
+}
 
 .greeting{
     font-size: 8.438rem;
@@ -209,7 +231,17 @@ h1{
 }
 @media (max-width:1281px) {
     .greeting{
+        font-size: 6rem;
+    }
+}
+@media (max-width:641px) {
+    .greeting{
         font-size: 3rem;
+    }
+}
+@media (max-width:374px) {
+    .greeting{
+        font-size: 2.5rem;
     }
 }
 
@@ -233,6 +265,11 @@ h1{
     display: flex;
     flex-direction: column;
 }
+@media (max-width:374px) {
+    .project-container{
+        margin-top: 1rem;
+    }
+}
 
 video{
     width: 100%;
@@ -250,6 +287,11 @@ video{
 .project-title{
     font-size: 2rem;
 }
+@media (max-width:374px) {
+    .project-title{
+        font-size: 1.5rem;
+    }
+}
 
 .project-details{
     width: 80%;
@@ -257,6 +299,13 @@ video{
     border-radius: 15px;
     padding: 30px 50px;
     margin-top: 0px;
+}
+
+@media (max-width:641px) {
+    .project-details{
+        width: 100%;
+        padding: 15px;
+    }
 }
 
 .details1{
@@ -386,19 +435,54 @@ video{
     margin: auto;
     display: flex;
 }
+@media (max-width:641px) {
+    .contact-me-wrapper{
+        flex-direction: column;
+        height: 95%;
+        margin-top: 5rem;
+    }
+}
+@media (max-width:374px) {
+    .contact-me-wrapper{
+        margin-top: 5rem;
+    }
+}
 
 .contact-info{
     flex: 1;
+}
+@media (max-width:641px) {
+    .contact-info{
+        flex: 0;
+    }
 }
 
 .contact-me-title{
     font-size: 4rem;
     margin-bottom: 20px;
 }
+@media (max-width:641px) {
+    .contact-me-title{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:374px) {
+    .contact-me-title{
+        font-size: 1.25rem;
+        margin-bottom: 0px;
+    }
+}
 
 .connect-online{
     font-size: 1.5rem;
     margin-bottom: 10px;
+}
+@media (max-width:641px) {
+    .connect-online{
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
 }
 
 .connect-online-line{
@@ -410,6 +494,11 @@ video{
     height: 40px;
     margin-right: 30px;
 }
+@media (max-width:641px) {
+    .contact-image{
+        height: 30px;
+    }
+}
 
 .connect-online-image{
     filter: invert(99%) sepia(0%) saturate(3334%) hue-rotate(148deg) brightness(112%) contrast(100%);
@@ -417,22 +506,38 @@ video{
     margin-right: 10px;
 }
 
-.get-in-touch{
-    flex: 1;
-}
-
 .email-wrapper{
     margin-top: 50px;
+}
+@media (max-width:641px) {
+    .email-wrapper{
+        margin-top: 10px;
+    }
 }
 
 .email-title{
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+@media (max-width:641px) {
+    .email-title{
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+}
 
 .email{
     color: blue;
     text-decoration: none;
+}
+
+.get-in-touch{
+    flex: 1;
+}
+@media (max-width:641px) {
+    .get-in-touch{
+        margin-top: 20px;
+    }
 }
 
 #contact-me-status{
@@ -442,7 +547,13 @@ video{
     border-radius: 5px;
     font-size: 1.25rem;
     margin-top: 20px;
-    
+}
+@media (max-width:641px) {
+    #contact-me-status{
+        padding: 5px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
 }
 
 #contact-me-status.success{
@@ -486,9 +597,27 @@ video{
     border-radius: 3px;
     font-family: 'Inter', sans-serif;
 }
+@media (max-width:641px) {
+    .contact-me-input{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        padding: 3px;
+        border-radius: 3px;
+    }
+}
 
 textarea{
     resize: vertical;
+}
+@media (max-width:641px) {
+    textarea{
+        height: 50px;
+    }
+}
+@media (max-width:374px) {
+    textarea{
+        height: 30px;
+    }
 }
 
 textarea:focus, input:focus{
@@ -507,6 +636,11 @@ textarea:focus, input:focus{
     font-family: 'Inter', sans-serif;
     cursor: pointer;
 }
+@media (max-width:374px) {
+    .contact-me-button{
+        margin-top: 5px;
+    }
+}
 
 .contact-me-button:hover{
     transform: scale(1.1);
@@ -523,17 +657,44 @@ textarea:focus, input:focus{
     margin: auto;
     width: 80%;
 }
+@media (max-width:641px) {
+    .about-me-wrapper{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@media (max-width:1281px) {
+    .about-me-wrapper{
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
 
 .about-me-name{
     font-size: 4.125rem;
     font-weight: 200;
     margin-bottom: -10px;
 }
+@media (max-width:641px) {
+    .about-me-name{
+        font-size: 3rem;
+    }
+}
 
 .about-me-subtitle{
     font-size: 1.5rem;
     color: #C8C8C8;
     margin-bottom: 40px;
+}
+@media (max-width:641px) {
+    .about-me-subtitle{
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
 }
 
 .horizontal-line{
@@ -552,6 +713,11 @@ textarea:focus, input:focus{
     margin-top: 20px;
     margin-bottom: 30px;
 }
+@media (max-width:641px) {
+    .horizontal-line2{
+        margin-bottom: 0px;
+    }
+}
 
 @keyframes horizontal-line-animation{
     0%{
@@ -567,6 +733,12 @@ textarea:focus, input:focus{
     font-weight: 100;
     text-align: start;
     margin-bottom: 170px;
+}
+@media (max-width:641px) {
+    .about-me-body{
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
 }
 
 .about-me-body-p{
@@ -584,4 +756,9 @@ textarea:focus, input:focus{
     background-color: grey;
     transform: scale(1.1);
 }
-
+@media (max-width:641px) {
+    .last-button{
+        font-size: 1.25rem;
+        padding: 10px 15px;
+    }
+}

@@ -19,14 +19,26 @@ const observer = new IntersectionObserver(
                 return
             } else if(entry.target.classList.contains("introduction")){
                 body.style.backgroundColor="#151515";
-                nav.style.top="70%";
                 navProjects.classList.remove("current-page");
                 navSkills.classList.remove("current-page");
                 navContactMe.classList.remove("current-page");
                 navAboutMe.classList.remove("current-page");
+                if(window.innerWidth <=1281){
+                    nav.style.top="3rem"
+                }else if(window.innerWidth <= 641){
+                    nav.style.top="1.25rem"
+                } else{
+                    nav.style.top="70%";
+                }
             } else if(entry.target.classList.contains("project1")){
                 body.style.backgroundColor="#0F0C00";
-                nav.style.top="30%";
+                if(window.innerWidth <=1281){
+                    nav.style.top="3rem"
+                }else if(window.innerWidth <= 641){
+                    nav.style.top="1.25rem"
+                } else{
+                    nav.style.top="30%";
+                }
                 nav.style.transform="translate(0, -50%)";
                 navProjects.classList.add("current-page");
                 navSkills.classList.remove("current-page");
@@ -42,7 +54,13 @@ const observer = new IntersectionObserver(
                 navProjects.classList.add("current-page");
             } else if(entry.target.classList.contains("skills")){
                 body.style.backgroundColor="#151515";
-                nav.style.top="30%";
+                if(window.innerWidth <=1281){
+                    nav.style.top="3rem"
+                }else if(window.innerWidth <= 641){
+                    nav.style.top="1.25rem"
+                } else{
+                    nav.style.top="30%";
+                }
                 navProjects.classList.remove("current-page");
                 navContactMe.classList.remove("current-page");
                 navAboutMe.classList.remove("current-page");
@@ -52,14 +70,26 @@ const observer = new IntersectionObserver(
                 })
             } else if(entry.target.classList.contains("contact-me")){
                 body.style.backgroundColor="#303E4F";
-                nav.style.top="30%";
+                if(window.innerWidth <=1281){
+                    nav.style.top="3rem"
+                }else if(window.innerWidth <= 641){
+                    nav.style.top="1.25rem"
+                } else{
+                    nav.style.top="30%";
+                }
                 navProjects.classList.remove("current-page");
                 navSkills.classList.remove("current-page");
                 navAboutMe.classList.remove("current-page");
                 navContactMe.classList.add("current-page");
             } else if(entry.target.classList.contains("about-me")){
                 body.style.backgroundColor="#151515";
-                nav.style.top="30%";
+                if(window.innerWidth <=1281){
+                    nav.style.top="3rem"
+                }else if(window.innerWidth <= 641){
+                    nav.style.top="1.25rem"
+                } else{
+                    nav.style.top="30%";
+                }
                 navProjects.classList.remove("current-page");
                 navSkills.classList.remove("current-page");
                 navContactMe.classList.remove("current-page");
