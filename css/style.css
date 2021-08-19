@@ -527,8 +527,14 @@ video{
 }
 
 .email{
-    color: blue;
+    color: rgb(65, 65, 251);
     text-decoration: none;
+    font-size: 1.5rem;
+}
+@media (max-width:1281px) {
+    .email{
+        font-size: 1rem;
+    }
 }
 
 .get-in-touch{
