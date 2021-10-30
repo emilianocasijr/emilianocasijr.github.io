@@ -168,12 +168,21 @@ h1{
     }
 }
 
+@keyframes horizontal-line-animation2{
+    0%{
+        transform: translatex(10%);
+    }
+    100%{
+        transform: translatex(50%);
+    }
+}
+
 .line1{
     animation: line-animation 6s linear infinite alternate;
 }
 @media (max-width:1281px) {
     .line1{
-        animation: horizontal-line-animation 6s linear infinite alternate;
+        animation: horizontal-line-animation2 6s linear infinite alternate;
     }
 }
 
@@ -183,7 +192,7 @@ h1{
 }
 @media (max-width:1281px) {
     .line2{
-        animation: horizontal-line-animation 6s linear infinite alternate-reverse;
+        animation: horizontal-line-animation2 6s linear infinite alternate-reverse;
         margin: 0;
         margin-top: 20px;
         padding: 0;
@@ -248,6 +257,7 @@ h1{
 .greeting-subtitle{
     font-weight: 300;
     font-size: 1.875rem;
+    margin-top: 40px;
 }
 @media (max-width:1281px) {
     .greeting-subtitle{
@@ -727,10 +737,10 @@ textarea:focus, input:focus{
 
 @keyframes horizontal-line-animation{
     0%{
-        transform: translatex(10%);
+        transform: translatex(20%);
     }
     100%{
-        transform: translatex(50%);
+        transform: translatex(80%);
     }
 }
 
