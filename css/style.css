@@ -749,17 +749,26 @@ textarea:focus, input:focus{
     font-weight: 100;
     text-align: start;
     margin-bottom: 170px;
+    margin-top: 60px;
 }
 @media (max-width:641px) {
     .about-me-body{
         font-size: 1rem;
         margin-bottom: 0px;
+        margin-top: 0px;
     }
 }
 
 .about-me-body-p{
     margin-bottom: 20px;
 }
+
+@media (min-width:642px) {
+    #last-line{
+        margin-top: 70px;
+    }
+}
+
 
 .last-button{
     border: 1px solid white;
