@@ -47,6 +47,10 @@ const observer = new IntersectionObserver(
             } else if(entry.target.classList.contains("project2")){
                 body.style.backgroundColor="#150D24";
             } else if(entry.target.classList.contains("project3")){
+                body.style.backgroundColor="#150D24";
+            } else if(entry.target.classList.contains("project4")){
+                body.style.backgroundColor="#150D24";
+            } else if(entry.target.classList.contains("project5")){
                 body.style.backgroundColor="#01060C";
                 navSkills.classList.remove("current-page");
                 navContactMe.classList.remove("current-page");
