@@ -319,12 +319,19 @@ video{
 }
 
 .details1{
-    background-color: #473900;
+    background-color: #414141;
 }
 .details2{
-    background-color: #37323F;
+    background-color: #181420;
+    
 }
 .details3{
+    background-color: #473900;
+}
+.details4{
+    background-color: #202934;
+}
+.details5{
     background-color: #202934;
 }
 

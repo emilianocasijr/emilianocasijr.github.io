@@ -31,7 +31,7 @@ const observer = new IntersectionObserver(
                     nav.style.top="70%";
                 }
             } else if(entry.target.classList.contains("project1")){
-                body.style.backgroundColor="#0F0C00";
+                body.style.backgroundColor="#02182d";
                 if(window.innerWidth <=1281){
                     nav.style.top="3rem"
                 }else if(window.innerWidth <= 641){
@@ -45,9 +45,9 @@ const observer = new IntersectionObserver(
                 navContactMe.classList.remove("current-page");
                 navAboutMe.classList.remove("current-page");
             } else if(entry.target.classList.contains("project2")){
-                body.style.backgroundColor="#150D24";
+                body.style.backgroundColor="#051108";
             } else if(entry.target.classList.contains("project3")){
-                body.style.backgroundColor="#150D24";
+                body.style.backgroundColor="#0F0C00";
             } else if(entry.target.classList.contains("project4")){
                 body.style.backgroundColor="#150D24";
             } else if(entry.target.classList.contains("project5")){
