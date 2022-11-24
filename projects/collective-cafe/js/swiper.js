@@ -1,9 +1,16 @@
 const nav = document.querySelector("nav");
 const bodySection = document.querySelector(".products");
-const heroImage = document.querySelector('.hero-image')
+const heroImage = document.querySelector(".hero-image");
+
+const sliders = document.querySelectorAll(".slide-in");
 
 const intersectionOptions = {
-  rootMargin: "100000px 0px 0px 0px",
+  rootMargin: "10000px 0px -50px 0px",
+};
+
+const appearOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -100px 0px",
 };
 
 const bodyObserver = new IntersectionObserver(function (entries, bodyObserver) {
@@ -11,15 +18,34 @@ const bodyObserver = new IntersectionObserver(function (entries, bodyObserver) {
     console.log("body section");
     if (entry.isIntersecting) {
       nav.classList.add("nav-scrolled");
-      heroImage.classList.remove('hero-blur')
+      heroImage.classList.remove("hero-blur");
     } else {
       nav.classList.remove("nav-scrolled");
-      heroImage.classList.add('hero-blur')
+      heroImage.classList.add("hero-blur");
     }
   });
 }, intersectionOptions);
 
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
 bodyObserver.observe(bodySection);
+
+sliders.forEach((slider) => {
+  appearOnScroll.observe(slider);
+});
 
 const swiper = new Swiper(".swiper", {
   observer: true,
@@ -34,6 +60,6 @@ const swiper = new Swiper(".swiper", {
   centeredSlides: true,
   speed: 1400,
   autoplay: {
-    delay: 3000,
+    delay: 4000,
   },
 });

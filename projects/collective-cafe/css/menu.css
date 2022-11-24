@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #323232;
+  text-decoration: none;
+}
+
+body {
+  background-color: #eeefef;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 12%;
+  transition: all 1.5s ease;
+  z-index: 99999;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 75%;
+  margin: auto;
+  margin-top: 10%;
+  transition: all 1.5s ease;
+}
+
+nav .logo {
+  position: absolute;
+  width: 65%;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  transition: all 1.5s ease;
+  transform: translateY(18%);
+  animation: fadein 1.5s;
+}
+
+nav .instagram-icon {
+  width: 35px;
+  transition: all 1.5s ease;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(157deg)
+    brightness(102%) contrast(105%);
+}
+
+nav .hamburger-icon {
+  width: 35px;
+  transition: all 1.5s ease;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(157deg)
+    brightness(102%) contrast(105%);
+}
+
+.nav-scrolled {
+  background-color: rgba(70, 81, 87, 0.85);
+  transition: all 1.5s ease;
+}
+
+.nav-scrolled .logo {
+  width: 10%;
+  position: absolute;
+  top: 0;
+  transition: all 1.5s ease;
+  transform: translateY(10px);
+}
+
+.nav-scrolled ul {
+  margin-top: 6%;
+  transition: all 1.5s ease;
+}
+
+.menu {
+  margin-top: 30%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.menu img {
+  width: 80%;
+  margin: auto;
+  display: block;
+  margin-top: 40px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 26px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.menu p {
+  display: block;
+  margin-top: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.menu li {
+  margin-bottom: 50px;
+}
+
+.location {
+  padding: 80px 0px;
+  text-align: center;
+  margin: auto;
+  width: 75%;
+  position: relative;
+}
+
+.location h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.location p {
+  font-size: 14px;
+}
+
+.location .location-img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.location .icon {
+  width: 28px;
+}
+
+.pin-location,
+.operating-time {
+  display: flex;
+  text-align: left;
+  margin-top: 45px;
+}
+
+.pin-location-text,
+.operating-time-text {
+  margin-left: 12px;
+}
+
+.location-details {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.location-details:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 12px;
+  left: -32px;
+  right: -17px;
+  bottom: 0px;
+  border: 2px solid #797979;
+}
+
+.location-details:after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: -24px;
+  right: -27px;
+  bottom: 12px;
+  border: 2px solid #797979;
+}
+
+.google-maps {
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  margin-top: 70px;
+  padding: 15px 25px;
+  max-width: 165px;
+  background-color: #4a4a4a;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #4a4a4a;
+  padding: 30px 0 30px 20px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.footer p,
+.footer a {
+  color: white;
+}
+
+.footer p {
+  margin-top: 15px;
+}
