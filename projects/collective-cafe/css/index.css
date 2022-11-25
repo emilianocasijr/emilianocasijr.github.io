@@ -16,6 +16,12 @@ body {
   height: 100%;
 }
 
+@media screen and (min-width: 820px) {
+  body {
+    background-color: #eeefef;
+  }
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -48,11 +54,32 @@ nav .logo {
   animation: fadein 1.5s;
 }
 
+@media screen and (min-width: 820px) {
+  nav ul {
+    margin-top: 3%;
+  }
+
+  nav .logo {
+    max-width: 230px;
+    right: auto;
+    left: 15%;
+    top: 120%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(157deg)
+      brightness(102%) contrast(105%);
+  }
+}
+
 nav .instagram-icon {
   width: 35px;
   transition: all 1.5s ease;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(157deg)
     brightness(102%) contrast(105%);
+}
+
+@media screen and (min-width: 820px) {
+  nav .instagram-icon {
+    display: none;
+  }
 }
 
 nav .hamburger-icon {
@@ -62,12 +89,64 @@ nav .hamburger-icon {
     brightness(102%) contrast(105%);
 }
 
+@media screen and (min-width: 820px) {
+  nav .hamburger-icon {
+    margin-top: -20px;
+    filter: none;
+  }
+}
+
 .hero-image {
   height: 101vh;
   width: 100vw;
   background-image: url(../img/hero-background.png);
   background-size: cover;
   transition: all 2s ease;
+}
+
+@media screen and (min-width: 820px) {
+  .hero-wrapper {
+    height: 101vh;
+    overflow-x: hidden;
+  }
+
+  .hero-image {
+    background-image: url(../img/hero-background-desktop.png);
+    position: relative;
+    top: 10vh;
+    width: 55vw;
+    height: 70vh;
+    display: block;
+    margin-left: 40%;
+  }
+
+  .hero-image::after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 86px;
+    left: 80px;
+    right: -50px;
+    bottom: -53px;
+    border: 5px solid #fff;
+  }
+
+  .hero-image::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 208px;
+    left: 363px;
+    right: -97px;
+    bottom: -91px;
+    border: 5px solid #fff;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero-image {
+    width: 45vw;
+  }
 }
 
 @keyframes fadein {
@@ -84,6 +163,39 @@ nav .hamburger-icon {
   transition: all 2s ease;
 }
 
+.sharebar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -15%;
+  display: flex;
+  max-width: 70vw;
+  justify-content: space-between;
+}
+
+.sharebar ul {
+  list-style: none;
+}
+
+.sharebar ul li a {
+  color: #fff;
+}
+
+@media screen and (min-width: 820px) {
+  .sharebar {
+    left: 13%;
+    margin: 0;
+    margin-top: 10%;
+    justify-content: unset;
+  }
+
+  .sharebar ul li a {
+    color: #000;
+    margin-right: 30px;
+  }
+}
+
 .nav-scrolled {
   background-color: rgba(70, 81, 87, 0.85);
   transition: all 1.5s ease;
@@ -97,9 +209,35 @@ nav .hamburger-icon {
   transform: translateY(10px);
 }
 
+@media screen and (min-width: 820px) {
+  .nav-scrolled {
+    max-height: 8%;
+  }
+
+  .nav-scrolled .logo {
+    top: 10%;
+    height: 80%;
+    transition: all 1.5s ease;
+    transform: translateY(0px);
+    filter: none;
+  }
+
+  .nav-scrolled .hamburger-icon {
+    margin-top: 0px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(157deg)
+    brightness(102%) contrast(105%);
+  }
+}
+
 .nav-scrolled ul {
   margin-top: 6%;
   transition: all 1.5s ease;
+}
+
+@media screen and (min-width: 820px) {
+  .nav-scrolled ul {
+    margin-top: 2%;
+  }
 }
 
 .products {

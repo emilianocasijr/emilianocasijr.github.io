@@ -47,10 +47,12 @@ sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
 
+const noOfSlides = window.innerWidth > 1020 ? 3 : 1;
+
 const swiper = new Swiper(".swiper", {
   observer: true,
   observeParents: true,
-  slidesPerView: 1,
+  slidesPerView: noOfSlides,
   spaceBetween: 0,
   loop: true,
   pagination: {
