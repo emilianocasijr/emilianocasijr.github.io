@@ -246,10 +246,60 @@ nav .hamburger-icon {
   padding-bottom: 130px;
 }
 
+@media screen and (min-width: 820px){
+  .products{
+    max-width: 83%;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+    padding-bottom: 230px;
+  }
+
+  /* .products::after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 200px;
+    left: 200px;
+    right: 200px;
+    bottom: 200px;
+    border: 5px solid #fff;
+  } */
+}
+
 .products h2 {
   padding-top: 4.75rem;
   padding-bottom: 2.8125rem;
   font-size: 2.25rem;
+}
+
+@media screen and (min-width: 820px){
+  .products h2{
+    text-align: left;
+    margin-left: 5%;
+    max-width: 200px;
+  }
+  .products h2::after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    left: -92px;
+    right: -40px;
+    bottom: -169px;
+    border: 5px solid #fff;
+  }
+
+  .products h2::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 37px;
+    left: -46px;
+    right: -280px;
+    bottom: -350px;
+    border: 5px solid #fff;
+  }
 }
 
 .products .swiper {
@@ -270,6 +320,12 @@ nav .hamburger-icon {
   bottom: 20px !important;
 }
 
+@media screen and (min-width: 820px){
+  .swiper-pagination{
+    bottom: 0 !important;
+  }
+}
+
 .swiper-pagination-bullet {
   margin: 0 5px !important;
 }
@@ -286,12 +342,53 @@ nav .hamburger-icon {
   text-decoration: none;
 }
 
+@media screen and (min-width: 820px){
+  .all-menu{
+    top: 90px;
+  }
+}
+
 .location {
   padding: 80px 0px;
   text-align: center;
   margin: auto;
   width: 75%;
   position: relative;
+}
+
+@media screen and (min-width: 820px){
+  .location-wrapper{
+    background-color: #fff;
+    width: 100%;
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+  .location{
+    text-align: left;
+    width: 75%;
+  }
+
+  .location::after {
+    content: " ";
+    position: absolute;
+    z-index: 0;
+    top: -131px;
+    left: -106px;
+    right: -121px;
+    bottom: -50px;
+    border: 5px solid #797979;
+  }
+
+  .location::before {
+    content: " ";
+    position: absolute;
+    z-index: 0;
+    top: -160px;
+    left: 800px;
+    right: -148px;
+    bottom: 425px;
+    border: 5px solid #797979;
+  }
 }
 
 .location h2 {
@@ -306,6 +403,14 @@ nav .hamburger-icon {
 .location .location-img {
   margin-top: 50px;
   width: 100%;
+}
+
+@media screen and (min-width: 820px){
+  .location .location-img {
+    max-width: 50%;
+    order: 2;
+    margin-top: -200px;
+  }
 }
 
 .location .icon {
@@ -351,6 +456,15 @@ nav .hamburger-icon {
   border: 2px solid #797979;
 }
 
+
+@media screen and (min-width: 820px){
+  .location-details{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+}
+
 .google-maps {
   text-decoration: none;
   display: block;
@@ -361,6 +475,12 @@ nav .hamburger-icon {
   background-color: #4a4a4a;
   color: #fff;
   font-size: 14px;
+}
+
+@media screen and (min-width: 820px){
+  .google-maps{
+    text-align: center;
+  }
 }
 
 .contact-us {

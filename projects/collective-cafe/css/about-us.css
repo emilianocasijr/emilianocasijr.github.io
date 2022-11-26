@@ -45,6 +45,21 @@ nav .logo {
   animation: fadein 1.5s;
 }
 
+@media screen and (min-width: 820px) {
+  nav ul {
+    margin-top: 3%;
+  }
+
+  nav .logo {
+    max-width: 230px;
+    right: auto;
+    left: 15%;
+    top: 120%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(157deg)
+      brightness(102%) contrast(105%);
+  }
+}
+
 nav .instagram-icon {
   width: 35px;
   transition: all 1.5s ease;
@@ -52,11 +67,24 @@ nav .instagram-icon {
     brightness(102%) contrast(105%);
 }
 
+@media screen and (min-width: 820px) {
+  nav .instagram-icon {
+    display: none;
+  }
+}
+
 nav .hamburger-icon {
   width: 35px;
   transition: all 1.5s ease;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(157deg)
     brightness(102%) contrast(105%);
+}
+
+@media screen and (min-width: 820px) {
+  nav .hamburger-icon {
+    margin-top: -20px;
+    filter: none;
+  }
 }
 
 .nav-scrolled {
@@ -72,9 +100,35 @@ nav .hamburger-icon {
   transform: translateY(10px);
 }
 
+@media screen and (min-width: 820px) {
+  .nav-scrolled {
+    max-height: 8%;
+  }
+
+  .nav-scrolled .logo {
+    top: 10%;
+    height: 80%;
+    transition: all 1.5s ease;
+    transform: translateY(0px);
+    filter: none;
+  }
+
+  .nav-scrolled .hamburger-icon {
+    margin-top: 0px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(157deg)
+    brightness(102%) contrast(105%);
+  }
+}
+
 .nav-scrolled ul {
   margin-top: 6%;
   transition: all 1.5s ease;
+}
+
+@media screen and (min-width: 820px) {
+  .nav-scrolled ul {
+    margin-top: 2%;
+  }
 }
 
 .about-us {
@@ -82,6 +136,12 @@ nav .hamburger-icon {
   margin-top: 30%;
   width: 80%;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 820px){
+  .about-us{
+    margin-top: 8%;
+  }
 }
 
 .about-us h2 {
