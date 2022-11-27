@@ -89,6 +89,11 @@ nav .hamburger-icon {
     brightness(102%) contrast(105%);
 }
 
+nav button {
+  background: transparent;
+  border: none;
+}
+
 @media screen and (min-width: 820px) {
   nav .hamburger-icon {
     margin-top: -20px;
@@ -96,10 +101,49 @@ nav .hamburger-icon {
   }
 }
 
+.hamburger-menu {
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  margin: 0 !important;
+  background-color: grey;
+  z-index: -1;
+  background-color: rgb(70, 81, 87);
+  transition: all 1s ease;
+  color: #fff;
+  font-size: 32px;
+  justify-content: flex-start;
+  padding-top: 30%;
+  left: 100%;
+}
+
+@media screen and (min-width: 820px) {
+  .hamburger-menu {
+    padding-top: 20%;
+  }
+}
+
+.hamburger-menu li {
+  margin-bottom: 30px;
+}
+
+.hamburger-menu.active {
+  display: flex !important;
+  transition: all 1s ease;
+  left: 0;
+}
+
+.hamburger-menu a {
+  color: #fff;
+}
+
 .hero-image {
   height: 101vh;
   width: 100vw;
-  background-image: url(../img/hero-background.png);
+  background-image: url(../img/hero-background.webp);
   background-size: cover;
   transition: all 2s ease;
 }
@@ -111,7 +155,7 @@ nav .hamburger-icon {
   }
 
   .hero-image {
-    background-image: url(../img/hero-background-desktop.png);
+    background-image: url(../img/hero-background-desktop.webp);
     position: relative;
     top: 10vh;
     width: 55vw;
@@ -202,7 +246,7 @@ nav .hamburger-icon {
 }
 
 .nav-scrolled .logo {
-  width: 10%;
+  max-height: 80%;
   position: absolute;
   top: 0;
   transition: all 1.5s ease;
@@ -225,7 +269,7 @@ nav .hamburger-icon {
   .nav-scrolled .hamburger-icon {
     margin-top: 0px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(157deg)
-    brightness(102%) contrast(105%);
+      brightness(102%) contrast(105%);
   }
 }
 
@@ -246,8 +290,8 @@ nav .hamburger-icon {
   padding-bottom: 130px;
 }
 
-@media screen and (min-width: 820px){
-  .products{
+@media screen and (min-width: 820px) {
+  .products {
     max-width: 83%;
     margin: auto;
     margin-top: 150px;
@@ -273,8 +317,8 @@ nav .hamburger-icon {
   font-size: 2.25rem;
 }
 
-@media screen and (min-width: 820px){
-  .products h2{
+@media screen and (min-width: 820px) {
+  .products h2 {
     text-align: left;
     margin-left: 5%;
     max-width: 200px;
@@ -320,8 +364,8 @@ nav .hamburger-icon {
   bottom: 20px !important;
 }
 
-@media screen and (min-width: 820px){
-  .swiper-pagination{
+@media screen and (min-width: 820px) {
+  .swiper-pagination {
     bottom: 0 !important;
   }
 }
@@ -342,8 +386,8 @@ nav .hamburger-icon {
   text-decoration: none;
 }
 
-@media screen and (min-width: 820px){
-  .all-menu{
+@media screen and (min-width: 820px) {
+  .all-menu {
     top: 90px;
   }
 }
@@ -356,14 +400,14 @@ nav .hamburger-icon {
   position: relative;
 }
 
-@media screen and (min-width: 820px){
-  .location-wrapper{
+@media screen and (min-width: 820px) {
+  .location-wrapper {
     background-color: #fff;
     width: 100%;
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  .location{
+  .location {
     text-align: left;
     width: 75%;
   }
@@ -405,7 +449,7 @@ nav .hamburger-icon {
   width: 100%;
 }
 
-@media screen and (min-width: 820px){
+@media screen and (min-width: 820px) {
   .location .location-img {
     max-width: 50%;
     order: 2;
@@ -456,9 +500,8 @@ nav .hamburger-icon {
   border: 2px solid #797979;
 }
 
-
-@media screen and (min-width: 820px){
-  .location-details{
+@media screen and (min-width: 820px) {
+  .location-details {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -477,8 +520,8 @@ nav .hamburger-icon {
   font-size: 14px;
 }
 
-@media screen and (min-width: 820px){
-  .google-maps{
+@media screen and (min-width: 820px) {
+  .google-maps {
     text-align: center;
   }
 }
@@ -516,6 +559,12 @@ nav .hamburger-icon {
   position: relative;
   width: 75%;
   margin: auto;
+}
+
+@media screen and (min-width: 820px) {
+  .about-us {
+    width: 40%;
+  }
 }
 
 .about-us h2 {
@@ -558,6 +607,12 @@ nav .hamburger-icon {
   margin: auto;
   margin-bottom: 72px;
   width: 100%;
+}
+
+@media screen and (min-width: 820px) {
+  .about-us img {
+    max-width: 600px;
+  }
 }
 
 .about-us a {

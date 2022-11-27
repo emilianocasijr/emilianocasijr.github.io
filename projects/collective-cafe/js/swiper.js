@@ -65,3 +65,11 @@ const swiper = new Swiper(".swiper", {
     delay: 4000,
   },
 });
+
+const hamburger = document.querySelector(".hamburger");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburgerMenu.classList.toggle("active");
+  nav.classList.add("nav-scrolled");
+});
