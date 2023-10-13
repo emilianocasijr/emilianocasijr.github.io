@@ -362,6 +362,10 @@ video {
   background-color: #3e4e63;
 }
 
+.disabled-link {
+  pointer-events: none;
+}
+
 /********************
  SKILLS
  ***********************/
